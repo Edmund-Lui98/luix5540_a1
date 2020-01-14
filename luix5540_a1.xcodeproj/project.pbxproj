@@ -16,6 +16,9 @@
 		3FE008D923C7B5B80006D1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE008D723C7B5B80006D1CC /* LaunchScreen.storyboard */; };
 		3FE008E423C7B5B80006D1CC /* luix5540_a1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE008E323C7B5B80006D1CC /* luix5540_a1Tests.swift */; };
 		3FE008EF23C7B5B90006D1CC /* luix5540_a1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE008EE23C7B5B90006D1CC /* luix5540_a1UITests.swift */; };
+		3FE008FD23CE65230006D1CC /* images in Resources */ = {isa = PBXBuildFile; fileRef = 3FE008FC23CE65230006D1CC /* images */; };
+		3FE0090023CE7BDA0006D1CC /* like button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE008FE23CE7BDA0006D1CC /* like button.jpg */; };
+		3FE0090123CE7BDA0006D1CC /* dislike button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE008FF23CE7BDA0006D1CC /* dislike button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3FE008EA23C7B5B90006D1CC /* luix5540_a1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luix5540_a1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE008EE23C7B5B90006D1CC /* luix5540_a1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = luix5540_a1UITests.swift; sourceTree = "<group>"; };
 		3FE008F023C7B5B90006D1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE008FC23CE65230006D1CC /* images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = images; sourceTree = SOURCE_ROOT; };
+		3FE008FE23CE7BDA0006D1CC /* like button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "like button.jpg"; sourceTree = SOURCE_ROOT; };
+		3FE008FF23CE7BDA0006D1CC /* dislike button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dislike button.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				3FE008CD23C7B5B60006D1CC /* ViewController.swift */,
 				3FE008CF23C7B5B60006D1CC /* Main.storyboard */,
 				3FE008D523C7B5B80006D1CC /* Assets.xcassets */,
+				3FE008FF23CE7BDA0006D1CC /* dislike button.png */,
+				3FE008FE23CE7BDA0006D1CC /* like button.jpg */,
+				3FE008FC23CE65230006D1CC /* images */,
 				3FE008D723C7B5B80006D1CC /* LaunchScreen.storyboard */,
 				3FE008DA23C7B5B80006D1CC /* Info.plist */,
 				3FE008D223C7B5B60006D1CC /* luix5540_a1.xcdatamodeld */,
@@ -235,8 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE0090123CE7BDA0006D1CC /* dislike button.png in Resources */,
+				3FE008FD23CE65230006D1CC /* images in Resources */,
 				3FE008D923C7B5B80006D1CC /* LaunchScreen.storyboard in Resources */,
 				3FE008D623C7B5B80006D1CC /* Assets.xcassets in Resources */,
+				3FE0090023CE7BDA0006D1CC /* like button.jpg in Resources */,
 				3FE008D123C7B5B60006D1CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
