@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -32,7 +32,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvq-iV-Dcl" userLabel="Dislikes Button">
                                 <rect key="frame" x="81" y="480" width="50" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="dislike button.png"/>
+                                <state key="normal" title="Button" image="dislike button"/>
                                 <connections>
                                     <action selector="onDislikePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zx-cA-mTL"/>
                                 </connections>
@@ -48,12 +48,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAI-Jj-UtL" userLabel="Likes Button">
                                 <rect key="frame" x="282" y="480" width="49" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="like button.jpg"/>
+                                <state key="normal" title="Button" image="like button"/>
                                 <connections>
                                     <action selector="onLikePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnu-UG-fqg"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple.png" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-pY-lbH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-pY-lbH">
                                 <rect key="frame" x="97" y="214" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -73,8 +73,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apple.png" width="108.94736480712891" height="108.94736480712891"/>
-        <image name="dislike button.png" width="860" height="880"/>
-        <image name="like button.jpg" width="800" height="800"/>
+        <image name="apple" width="460" height="460"/>
+        <image name="dislike button" width="860" height="880"/>
+        <image name="like button" width="800" height="800"/>
     </resources>
 </document>
