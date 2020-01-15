@@ -14,7 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func onLikePressed(_ sender: Any) {
+        print("like pressed")
+    }
+    @IBAction func onDislikePressed(_ sender: Any) {
+        print("dislike pressed")
+    }
+    @IBAction func onNextPressed(_ sender: Any) {
+        print("next pressed")
+    }
 }
 

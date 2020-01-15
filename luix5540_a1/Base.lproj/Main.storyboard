@@ -34,19 +34,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvq-iV-Dcl" userLabel="Dislikes Button">
-                                <rect key="frame" x="87" y="480" width="50" height="51"/>
+                                <rect key="frame" x="81" y="480" width="50" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="dislike button.png"/>
+                                <connections>
+                                    <action selector="onDislikePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zx-cA-mTL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDQ-jk-aV8">
                                 <rect key="frame" x="192" y="592" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="onNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="us4-GL-8x6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAI-Jj-UtL" userLabel="Likes Button">
                                 <rect key="frame" x="282" y="480" width="49" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="like button.jpg"/>
+                                <connections>
+                                    <action selector="onLikePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnu-UG-fqg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
