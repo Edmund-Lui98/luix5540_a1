@@ -13,9 +13,18 @@ struct FruitCollection{
     static var current:Int = 0 // the current fruit in the collection (to be shown in the scene)
     init(){ // init is automatically called when you make an instance of the FruitCollection
             // You implement this function
+        addFruit(fruitName: "Apple", fruitImageName: "apple.png")
+        addFruit(fruitName: "Banana", fruitImageName: "banana.png")
+        addFruit(fruitName: "Mango", fruitImageName: "mango.png")
+        addFruit(fruitName: "Watermelon", fruitImageName: "watermelon.png")
             // Make a Fruit and append it to your FruitCollection
             // repeat as many times as you need, your collection should contain at least four fruits
     } //init
+    
+    func addFruit(fruitName:String, fruitImageName: String) {
+        let fruit = Fruit(fruitName: fruitName, fruitImageName: fruitImageName)
+        FruitCollection.collection.append(fruit)
+    }
 
     // return the current fruit
     static func currentFruit() -> Fruit {
