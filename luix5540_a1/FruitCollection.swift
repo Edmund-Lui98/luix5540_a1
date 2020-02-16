@@ -25,6 +25,10 @@ struct FruitCollection{
         let fruit = Fruit(fruitName: fruitName, fruitImageName: fruitImageName)
         FruitCollection.collection.append(fruit)
     }
+    
+    func deleteFruit(fruitIndex: Int) {
+        FruitCollection.collection.remove(at: fruitIndex)
+    }
 
     // return the current fruit
     static func currentFruit() -> Fruit {

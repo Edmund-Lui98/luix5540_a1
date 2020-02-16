@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5C-Sv-Nsx">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,7 +7,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Delete-->
+        <scene sceneID="itb-O5-0Pw">
+            <objects>
+                <viewController id="f86-b0-e2Q" customClass="DeleteViewController" customModule="luix5540_a1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqV-EG-0bY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4b-Hv-hWF">
+                                <rect key="frame" x="87" y="177" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snx-Db-c2z">
+                                <rect key="frame" x="185" y="417" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deletePressed:" destination="f86-b0-e2Q" eventType="touchUpInside" id="U3r-uh-Fvm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fF-rI-apv">
+                                <rect key="frame" x="191" y="595" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextPressed:" destination="f86-b0-e2Q" eventType="touchUpInside" id="475-LA-XLa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Qre-As-tHE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Delete" image="minus-30-30" id="z0M-Xi-6ub"/>
+                    <connections>
+                        <outlet property="img" destination="Z4b-Hv-hWF" id="udQ-u2-EFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9D-yu-q6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-798"/>
+        </scene>
+        <!--Favorites-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="luix5540_a1" customModuleProvider="target" sceneMemberID="viewController">
@@ -500,6 +541,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="dYn-2l-Gao"/>
                     <connections>
                         <outlet property="dislikes" destination="Q2q-nQ-d2u" id="WTC-6Z-tqU"/>
                         <outlet property="img" destination="UBy-pY-lbH" id="bDB-Zt-IW0"/>
@@ -508,12 +550,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.60714285714286" y="114.49275362318842"/>
+            <point key="canvasLocation" x="1567" y="114"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="bde-94-qk9">
+            <objects>
+                <viewController id="4E7-3s-tJ3" customClass="AddViewController" customModule="luix5540_a1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="18t-4h-mFk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-pf-ztx">
+                                <rect key="frame" x="87" y="169" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVi-0V-Kj9">
+                                <rect key="frame" x="192" y="216" width="30" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chooseLibrary:" destination="4E7-3s-tJ3" eventType="touchUpInside" id="gSn-SC-RHT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruit Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB1-cB-zZm">
+                                <rect key="frame" x="87" y="399" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmg-mY-WXZ">
+                                <rect key="frame" x="179" y="392" width="194" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-cT-hgE">
+                                <rect key="frame" x="176" y="625" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Fruit"/>
+                                <connections>
+                                    <action selector="AddFruitPressed:" destination="4E7-3s-tJ3" eventType="touchUpInside" id="VUI-Yu-ReH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="0kd-Tx-ggN"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="N8Z-4g-8Za" appends="YES" id="fra-wS-dDE"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="plus-30-30" id="Pn3-AJ-jh3"/>
+                    <connections>
+                        <outlet property="fruitNameField" destination="nmg-mY-WXZ" id="FYO-GG-GsP"/>
+                        <outlet property="pickImage" destination="Z7d-pf-ztx" id="wmG-tM-hmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVh-RT-25a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="N8Z-4g-8Za">
+                    <connections>
+                        <action selector="tapped:" destination="4E7-3s-tJ3" id="K0j-km-dzZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="902.67857142857133"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yL4-9B-qHH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B5C-Sv-Nsx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jCW-cI-4mb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="XYx-wF-BaE"/>
+                        <segue destination="4E7-3s-tJ3" kind="relationship" relationship="viewControllers" id="3qj-fe-MfR"/>
+                        <segue destination="f86-b0-e2Q" kind="relationship" relationship="viewControllers" id="nsA-WZ-ksN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l70-G3-qh7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>
         <image name="apple" width="460" height="460"/>
         <image name="dislike button" width="860" height="880"/>
         <image name="like button" width="800" height="800"/>
+        <image name="minus-30-30" width="30" height="30"/>
+        <image name="plus-30-30" width="30" height="30"/>
+        <image name="questionMark" width="100" height="100"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>
