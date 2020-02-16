@@ -10,6 +10,7 @@ import UIKit
 
 class DeleteViewController: UIViewController {
     
+    @IBOutlet weak var fruitName: UILabel!
     var fruit = FruitCollection()
     var currentFruit: Fruit! = FruitCollection.currentFruit()
     var currentImage: UIImage!
@@ -23,6 +24,7 @@ class DeleteViewController: UIViewController {
         currentFruit = FruitCollection.currentFruit()
         currentImage = UIImage(named: currentFruit.fruitImageName)!
         img.image = currentImage
+        fruitName.text = currentFruit.fruitName
 
         // Do any additional setup after loading the view.
     }

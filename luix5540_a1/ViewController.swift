@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dislikes: UILabel!
     @IBOutlet weak var likes: UILabel!
     @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var fruitName: UILabel!
     
     var fruit = FruitCollection()
     var currentFruit: Fruit! = FruitCollection.currentFruit()
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         }
         currentFruit = FruitCollection.currentFruit()
         currentImage = UIImage(named: currentFruit.fruitImageName)!
+        fruitName.text = currentFruit.fruitName
         img.image = currentImage
     }
     
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
         currentFruit = FruitCollection.currentFruit()
         currentImage = UIImage(named: currentFruit.fruitImageName)!
         img.image = currentImage
+        fruitName.text = currentFruit.fruitName
         likes.text = String(currentFruit.likes)
         dislikes.text = String(currentFruit.disLikes)
         

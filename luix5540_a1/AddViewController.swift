@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var pickImage: UIImageView!
     @IBOutlet weak var fruitNameField: UITextField!
@@ -18,8 +18,14 @@ class AddViewController: UIViewController , UIImagePickerControllerDelegate, UIN
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            
+        self.fruitNameField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func chooseLibrary(_ sender: UIButton) {
