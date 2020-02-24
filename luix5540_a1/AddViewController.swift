@@ -13,6 +13,8 @@ class AddViewController: UIViewController , UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var pickImage: UIImageView!
     @IBOutlet weak var fruitNameField: UITextField!
     
+    var fruit: Fruit?
+    
     @IBAction func tapped(_ sender: Any) {
         fruitNameField.resignFirstResponder()
     }
@@ -76,18 +78,18 @@ class AddViewController: UIViewController , UIImagePickerControllerDelegate, UIN
     
     @IBAction func AddFruitPressed(_ sender: Any) {
         
-        if (fruitNameField.text?.count ?? 0 > 0) {
-            
-            let alert = UIAlertController(title: "Fruit has been added", message: "The fruit '" + (fruitNameField.text ?? "") + "' has been added", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "No fruit added", message: "No fruit has been entered", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true, completion: nil)
-        }
+//        if (fruitNameField.text?.count ?? 0 > 0) {
+//            
+//            let alert = UIAlertController(title: "Fruit has been added", message: "The fruit '" + (fruitNameField.text ?? "") + "' has been added", preferredStyle: .alert)
+//            let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
+//            alert.addAction(action)
+//            present(alert, animated: true, completion: nil)
+//        } else {
+//            let alert = UIAlertController(title: "No fruit added", message: "No fruit has been entered", preferredStyle: .alert)
+//            let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
+//            alert.addAction(action)
+//            present(alert, animated: true, completion: nil)
+//        }
         
     }
     

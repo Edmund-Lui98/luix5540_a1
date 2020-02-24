@@ -40,8 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35FEEBD523E21D0C001FB0C9 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Fruit.swift; path = luix5540_a1/Fruit.swift; sourceTree = "<group>"; };
-		35FEEBD723E21E02001FB0C9 /* FruitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FruitCollection.swift; path = luix5540_a1/FruitCollection.swift; sourceTree = "<group>"; };
+		35FEEBD523E21D0C001FB0C9 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		35FEEBD723E21E02001FB0C9 /* FruitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollection.swift; sourceTree = "<group>"; };
 		3F3AB37C23F8AB6700E3633F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		3F3AB37E23F8AC1700E3633F /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
 		3FE008C623C7B5B60006D1CC /* luix5540_a1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luix5540_a1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +89,6 @@
 		3FE008BD23C7B5B60006D1CC = {
 			isa = PBXGroup;
 			children = (
-				35FEEBD523E21D0C001FB0C9 /* Fruit.swift */,
-				35FEEBD723E21E02001FB0C9 /* FruitCollection.swift */,
 				3FE008C823C7B5B60006D1CC /* luix5540_a1 */,
 				3FE008E223C7B5B80006D1CC /* luix5540_a1Tests */,
 				3FE008ED23C7B5B90006D1CC /* luix5540_a1UITests */,
@@ -111,6 +109,8 @@
 		3FE008C823C7B5B60006D1CC /* luix5540_a1 */ = {
 			isa = PBXGroup;
 			children = (
+				35FEEBD523E21D0C001FB0C9 /* Fruit.swift */,
+				35FEEBD723E21E02001FB0C9 /* FruitCollection.swift */,
 				3FE008C923C7B5B60006D1CC /* AppDelegate.swift */,
 				3FE008CB23C7B5B60006D1CC /* SceneDelegate.swift */,
 				3FE008CD23C7B5B60006D1CC /* ViewController.swift */,
